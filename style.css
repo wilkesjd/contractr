@@ -20,7 +20,7 @@ button {
     border: none;
     color: azure;
     text-align: center;
-    border-radius: 12px;
-    padding: 32px 32px;
-    font-size: 24px;
+    border-radius: 90px;
+    padding: 50px 10px;
+    font-size: 32px;
 }
