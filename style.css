@@ -5,6 +5,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
+    margin-top: 50%;
 }
 img {
     width: 100%;
