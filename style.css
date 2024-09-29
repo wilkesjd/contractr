@@ -3,9 +3,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
 }
 .title{
-    flex-flow: row nowrap;
     color:#9830C1;
     font-size: 128pt;
 }
