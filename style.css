@@ -26,6 +26,6 @@ button {
     font-size: 200%;
     margin: 0.4em auto;
     text-wrap: nowrap;
-    max-width: 20%;
+    width: 200px;
     flex-shrink: 0;
 }
