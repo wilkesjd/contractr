@@ -21,6 +21,7 @@ button {
     color: azure;
     text-align: center;
     border-radius: 32px;
+    font-size: 200%;
     text-wrap: nowrap;
     max-width: 20%;
     flex-shrink: 1;
