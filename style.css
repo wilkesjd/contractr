@@ -1,4 +1,7 @@
-
+body{
+    display: flex;
+    justify-content: center;
+}
 .title{
     color:#9830C1;
     font-size: 128pt;
