@@ -6,6 +6,8 @@ body{
     flex-wrap: nowrap;
 }
 .title{
+    width: auto;
+    height: auto;
     color:#9830C1;
     font-size: 128pt;
 }
