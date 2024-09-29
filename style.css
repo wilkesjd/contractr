@@ -15,3 +15,10 @@ img {
     color:#9830C1;
     font-size: 128pt;
 }
+.button {
+    background-color: black;
+    border: none;
+    color: azure;
+    text-align: center;
+    border-radius: 12px;
+}
