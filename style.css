@@ -5,11 +5,7 @@ body{
     align-items: center;
 }
 .title{
-    flex-grow:1;
-    width: 50%;
-    height: 50%;
-    display:block;
-    margin:auto;
+    flex-flow: row nowrap;
     color:#9830C1;
     font-size: 128pt;
 }
