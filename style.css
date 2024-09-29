@@ -5,6 +5,7 @@ body{
     align-items: center;
 }
 .title{
+    flex-grow:1;
     max-width: 100%;
     max-height: 100%;
     display:block;
