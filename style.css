@@ -31,6 +31,7 @@ button {
     text-wrap: nowrap;
     width: 200px;
     flex-shrink: 0;
+    cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 }
