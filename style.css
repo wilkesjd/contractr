@@ -5,7 +5,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    padding-bottom:20px;
+    
     
 }
 img {
@@ -26,4 +26,5 @@ button {
     font-size: 24px;
     text-wrap: 0;
     max-width:20%;
+    padding-bottom:20px;
 }
