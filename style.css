@@ -4,11 +4,13 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    
+}
+img {
+    max-width: 100%;
+    height: auto;
 }
 .title{
-    width: auto;
-    height: auto;
-    object-fit: contain;
     color:#9830C1;
     font-size: 128pt;
 }
