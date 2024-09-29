@@ -27,6 +27,6 @@ button {
     padding-bottom:5px;
     font-size: 200%;
     text-wrap: nowrap;
-    width: 200px;
+    width: 20%;
     flex-shrink: 0;
 }
