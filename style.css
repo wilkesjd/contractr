@@ -25,4 +25,5 @@ button {
     font-size: 24px;
     text-wrap: 0;
     max-width:20%;
+    flex-shrink: 0;
 }
