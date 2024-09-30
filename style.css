@@ -31,6 +31,7 @@ img {
     font-size: 200%;
     text-wrap: nowrap;
     width: 200px;
+    height:100%
     flex-shrink: 0;
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
