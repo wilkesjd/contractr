@@ -34,8 +34,8 @@ img {
     font-size: 90pt;
 }
 h1 {
-    position: absolute; /* Use absolute positioning */
-    top: 0;            /* Aligns to the top of the viewport */
+    position: absolute; 
+    top: 0;            
     left: 0; 
     font-family:'Righteous';
     margin-left: 20px;
@@ -45,7 +45,7 @@ h1 {
 }
 
 button {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Righteous';
     background-color: black;
     border: none;
     color: azure;
