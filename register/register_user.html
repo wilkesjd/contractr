@@ -6,23 +6,23 @@
         <title>Register Account</title>
         <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
         <link rel="stylesheet" href="../style.css"> 
+        <script src="index.js" defer></script>
     </head>
 
     <body>
         <h1>Contractr</h1>
-    <form action="." method="post" id="aligned">
-        <input type="hidden" name="action" value="register_user">
+    <form action="." method="post" id="register_user">
         <link rel="stylesheet" href="style.css">
 
-        <input type="text" name="user_firstname"  placeholder="First Name">
+        <input type="text" id="user_firstname"  placeholder="First Name">
 
-        <input type="text" name="user_lastname"  placeholder="Last Name">
+        <input type="text" id="user_lastname"  placeholder="Last Name">
 
-        <input type="text" name="user_email"  placeholder="Enter your email">
+        <input type="text" id="user_email"  placeholder="Enter your email">
         
-        <input type="password" name="user_password"  placeholder="Enter your password"/>
+        <input type="password" id="user_password"  placeholder="Enter your password"/>
 
-        <input type="password" name="user_password_redo"  placeholder="Enter your password again"/>
+        <input type="password" id="user_password_redo"  placeholder="Enter your password again"/>
         
         <label>&nbsp;</label>
     <button type="submit">Register</button>

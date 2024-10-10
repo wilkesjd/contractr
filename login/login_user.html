@@ -5,18 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Login</title>
         <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
-        <link rel="stylesheet" href="../style.css"> 
+        <link rel="stylesheet" href="../style.css">
+        <script src="index.js" defer></script>
     </head>
 
     <body>
         <div class="title"><img src="../img/Contractr.svg" alt="Contractr"></div>
-    <form action="." method="post" id="aligned">
-        <input type="hidden" name="action" value="login_user">
+    <form action="." method="post" id="login_user">
         <link rel="stylesheet" href="style.css">
 
-        <input type="text" name="user_email"  placeholder="Enter your email">
+        <input type="text" id="user_email"  placeholder="Enter your email">
         
-        <input type="password" name="user_password"  placeholder="Enter your password"/><br>
+        <input type="password" id="user_password"  placeholder="Enter your password"/><br>
         
         <label>&nbsp;</label>
         <button type="submit">Log In</button>
