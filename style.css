@@ -7,7 +7,7 @@ body{
     gap: 15px;
     margin-top: 10%;
 }
-form{
+form{        
         min-height: 100%;
         display: flex;
         flex-direction: column;
@@ -77,4 +77,30 @@ button:hover {
     background-color: #f9f9f9; 
     outline: none;            
     transition: border-color 0.3s ease; 
+}
+
+
+.homeNav{
+    background-color: black;
+    overflow: hidden;
+    border-radius: 32px;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+}
+
+.homeNav a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.headerImg{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 15%;
 }
