@@ -81,7 +81,7 @@ button:hover {
 
 
 .homeNav{
-    background-color: black;
+    background-color: #9830C1;
     overflow: hidden;
     border-radius: 32px;
     position: absolute;
@@ -90,8 +90,9 @@ button:hover {
 }
 
 .homeNav a{
+    font-family:'Righteous';
     float: left;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
