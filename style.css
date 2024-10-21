@@ -84,29 +84,6 @@ button:hover {
     transition: border-color 0.3s ease; 
 }
 
-<<<<<<< HEAD
-
-.homeNav{
-    background-color: #9830C1;
-    overflow: hidden;
-    border-radius: 32px;
-    position: absolute;
-    top: 3%;
-    left: 3%;
-}
-
-.homeNav a{
-    font-family:'Righteous';
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-=======
->>>>>>> 2330d63524876252939beda90dc7e792a72e6a32
 .headerImg{
     position: absolute;
     top: 2%;
