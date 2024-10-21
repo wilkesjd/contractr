@@ -2,12 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
     padding: 20px;
-    background: linear-gradient(to top, #9830C1, #bfb2c4);
+    background: linear-gradient(to top, #9830C1, #000000);
+    overflow-x: hidden;
 }
 
 h1 {
     text-align: center;
     font-family:'Righteous';
+    color: white;
 }
 
 form {
@@ -22,6 +24,7 @@ form {
 label {
     display: block;
     margin: 10px 0 5px;
+    font-family:'Righteous';
 }
 
 input[type="text"],
@@ -33,16 +36,18 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-bottom: 20px;
+    font-family:'Righteous';
 }
 
 textarea {
     height: 100px;
     resize: vertical;
-    font-family: inherit;
+    font-family:'Righteous';
 }
 
 input[type="submit"] {
     background-color: #9830C1;
+    font-family:'Righteous';
     color: white;
     padding: 10px 15px;
     border: none;
