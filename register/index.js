@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
       console.log("Email: ", email);
       console.log("Password:", password);
       console.log("Password Redo:", passwordredo);
+      location.href='role_specification.html';
     });
   });
   

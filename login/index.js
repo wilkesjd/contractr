@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // Temporary for testing
       console.log("Email: ", email);
       console.log("Password:", password);
+      location.href='../homepage/homepage.html';
     });
   });
   
