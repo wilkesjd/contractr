@@ -4,6 +4,7 @@ body {
     padding: 20px;
     background: linear-gradient(to top, #9830C1, #000000);
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
 h1 {
@@ -58,4 +59,23 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #9830C1;
+}
+
+button {
+    font-family:'Righteous';
+    background-color: black;
+    border: none;
+    color: azure;
+    text-align: center;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    font-size: 200%;
+    text-wrap: nowrap;
+    width: 250px;
+    flex-shrink: 0;
+    cursor: pointer;
+    border-radius: 50px; 
 }

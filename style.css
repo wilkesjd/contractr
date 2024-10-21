@@ -71,7 +71,7 @@ button {
 button:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
-  input[type="text"], input[type="password"] {
+  input[type="text"], input[type="email"], input[type="password"] {
     font-family:'Righteous';
     width: 100%;             
     padding: 15px;            
@@ -120,4 +120,37 @@ button:hover {
     outline: none;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.role-section {
+    text-align: center; /* Center the radio button section */
+    margin: 20px 0;
+}
+
+.role-section label, 
+.role-section input {
+    font-family:'Righteous';
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 5px; 
+}
+
+.notification {
+    background-color: #a09090;
+    font-family:'Righteous';
+    color: #333;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: none; /* Hidden by default */
+}
+
+.notification a {
+    color: #0066cc;
+    text-decoration: underline;
+    cursor: pointer;
 }

@@ -21,16 +21,31 @@
 
         <input type="text" id="user_lastname"  placeholder="Last Name" required>
 
-        <input type="text" id="user_email"  placeholder="Enter your email" required>
+        <input type="email" id="user_email"  placeholder="Email" required>
         
-        <input type="password" id="user_password"  placeholder="Enter your password" required/>
+        <input type="password" id="user_password"  placeholder="Password" required/>
 
-        <input type="password" id="user_password_redo"  placeholder="Enter your password again" required/>
+        <input type="password" id="user_password_redo"  placeholder="Re-enter password" required/>
+
+        <div class="role-section">
+            <label for="role">Choose your role:</label><br>
+            <input type="radio" id="client" name="role" value="Client" required>
+            <label for="client">Client</label>
+            
+            <input type="radio" id="contractor" name="role" value="Contractor" required>
+            <label for="contractor">Contractor</label>
+        </div>
         
         <label>&nbsp;</label>
     <button type="submit">Register</button>
     </form>
     </div>
 
+    <div class="notification" id="notification-box">
+        <p>Warning! You are about to register as a <span id="selected-role"></span>. This action cannot be undone.</p>
+        <a href="#" onclick="returnToRegistration()">Go back to registration</a>
+        <br> 
+        <a href="#" onclick="displayView(document.getElementById('selected-role').innerText);">Continue</a>
+    </div>
     </body>
 </html>
