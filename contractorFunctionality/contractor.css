@@ -29,6 +29,13 @@ h1 {
     font-family:'Righteous';
 }
 
+h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    font-family:'Righteous';
+}
+
 /* Profile Picture Section */
 .profile-picture {
     text-align: center;
