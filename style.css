@@ -7,6 +7,8 @@ body{
     gap: 15px;
     margin-top: 10%;
     overflow-x: hidden;
+    background: linear-gradient(to top, rgba(152,48,193,1) 0%, rgba(0,0,0,1) 100%);
+    background-attachment: fixed;
 }
 form{        
         min-height: 100%;
@@ -153,4 +155,28 @@ input[type="radio"] {
     color: #0066cc;
     text-decoration: underline;
     cursor: pointer;
+}
+
+.container{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    overflow-x: hidden;
+    background: white;
+    border-radius: 15px;
+}
+
+
+#navbar{
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    width: 15%;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
 }
