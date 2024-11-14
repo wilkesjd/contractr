@@ -6,7 +6,7 @@ import {signOutAction} from "@/app/actions";
 function LogoutButton() {
     return (
         <>
-            <Button radius="full" size="lg" color="primary" onClick={(event: MouseEvent) => signOutAction} className="px-16">
+            <Button radius="full" size="lg" color="primary" onClick={(event: MouseEvent) => signOutAction()} className="px-16">
             Log Out
             </Button>
         </>
