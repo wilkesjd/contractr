@@ -5,25 +5,24 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Link from "next/link";
 
-export default async function Signup(props: {
-  searchParams: Promise<Message>;
-}) {
+export default async function Signup(props: { searchParams: Promise<Message> }) {
   const searchParams = await props.searchParams;
+
   if ("message" in searchParams) {
     return (
-      <div className="w-full flex-1 flex items-center h-screen sm:max-w-md justify-center gap-2 p-4">
+      <div className="w-full flex-1 flex items-center h-screen justify-center gap-2 p-4">
         <FormMessage message={searchParams} />
       </div>
     );
   }
 
   return (
-    <>
-      <form className="flex flex-col min-w-64 max-w-64 mx-auto">
-        <h1 className="text-2xl font-medium">Sign up</h1>
-        <p className="text-sm text text-foreground">
+    <div className="flex items-center justify-center h-screen w-screen max-w-screen bg-gradient-to-br from-black to-purple-600">
+      <form className="bg-gray-100 p-6 rounded-lg shadow-md w-80 space-y-4">
+        <h1 className="text-2xl font-medium text-center">Sign up</h1>
+        <p className="text-sm text-center text-foreground">
           Already have an account?{" "}
-          <Link className="text-primary font-medium underline" href="/sign-in">
+          <Link className="text-blue-600 font-medium underline" href="/sign-in">
             Sign in
           </Link>
         </p>
@@ -38,12 +37,14 @@ export default async function Signup(props: {
             minLength={6}
             required
           />
+          <div className="flex justify-center">
           <SubmitButton formAction={signUpAction} pendingText="Signing up...">
             Sign up
           </SubmitButton>
           <FormMessage message={searchParams} />
+          </div>
         </div>
       </form>
-    </>
+    </div>
   );
 }
