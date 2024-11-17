@@ -10,8 +10,8 @@ export default async function ForgotPassword(props: {
 }) {
   const searchParams = await props.searchParams;
   return (
-    <>
-      <form className="flex-1 flex flex-col w-full gap-2 text-foreground [&>input]:mb-6 min-w-64 max-w-64 mx-auto">
+    <div className="flex items-center justify-center h-screen w-screen bg-gradient-to-br from-black to-purple-600">
+      <form className="bg-gray-100 p-6 rounded-lg shadow-md w-80 space-y-4">
         <div>
           <h1 className="text-2xl font-medium">Reset Password</h1>
           <p className="text-sm text-secondary-foreground">
@@ -30,6 +30,6 @@ export default async function ForgotPassword(props: {
           <FormMessage message={searchParams} />
         </div>
       </form>
-    </>
+    </div>
   );
 }
