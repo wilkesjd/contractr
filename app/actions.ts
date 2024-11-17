@@ -36,6 +36,7 @@ export const signUpAction = async (formData: FormData) => {
 };
 
 export const signInAction = async (formData: FormData) => {
+  let numAttempts = 0;
   const email = formData.get("email") as string;
   const password = formData.get("password") as string;
   const supabase = await createClient();
@@ -44,8 +45,10 @@ export const signInAction = async (formData: FormData) => {
     email,
     password,
   });
-
+  if(numAttempts == 1)
+    return(redirect("/"))
   if (error) {
+    numAttempts++
     return encodedRedirect("error", "/sign-in", error.message);
   }
 
