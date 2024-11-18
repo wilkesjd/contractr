@@ -1,50 +1,38 @@
-"use client";
+// app/(auth-pages)/dashboard/page.tsx
+import Link from "next/link"; // Import Link
 
-import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
-
-const getUserData = async () => {
-  const response = await fetch("/api/supabase-client"); // Calling the API route
-  if (!response.ok) {
-    throw new Error("Failed to fetch user data");
-  }
-  return await response.json();
-};
-
-export default function Dashboard() {
-  const [user, setUser] = useState<any>(null);
-  const router = useRouter();
-
-  useEffect(() => {
-    const fetchUser = async () => {
-      try {
-        const userData = await getUserData(); // Fetch user data
-        if (userData) {
-          setUser(userData);
-        } else {
-          router.push("/sign-in"); // Redirect to sign-in if no user
-        }
-      } catch (error) {
-        console.error(error);
-        router.push("/sign-in"); // Redirect on error
-      }
-    };
-
-    fetchUser();
-  }, [router]);
+const Dashboard = () => {
+  // Sample job posting data
+  const jobPosting = {
+    title: "Bathroom Remodel",
+    description: "Looking for a contractor to remodel a small bathroom. Includes demo, tiling, plumbing, and painting.",
+    location: "123 Main St, Springfield, IL",
+    budget: "$5,000",
+    postedOn: "2024-11-17",
+  };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gradient-to-br from-black to-purple-600">
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md w-80 text-center">
-        {user ? (
-          <>
-            <h1 className="text-2xl font-medium">Welcome, {user.email}</h1>
-            <p className="mt-4 text-sm">You are now logged in.</p>
-          </>
-        ) : (
-          <p>Loading...</p>
-        )}
+    <div className="flex items-center justify-center h-screen w-screen max-w-screen bg-gradient-to-br from-black to-purple-600">
+      <div className="bg-gray-100 p-6 rounded-lg shadow-md w-80 space-y-4">
+        <h1 className="text-2xl font-medium text-center mb-6">Welcome to Your Dashboard</h1>
+
+        <div className="bg-white p-6 rounded-lg shadow-md space-y-4">
+          <h2 className="text-xl font-semibold mb-4">{jobPosting.title}</h2>
+          <p className="text-gray-700 mb-2">{jobPosting.description}</p>
+          <p className="text-sm text-gray-600 mb-2">Location: {jobPosting.location}</p>
+          <p className="text-sm text-gray-600 mb-2">Budget: {jobPosting.budget}</p>
+          <p className="text-xs text-gray-500">Posted on: {jobPosting.postedOn}</p>
+        </div>
+
+        {/* Correctly using Link without the <a> tag */}
+        <div className="flex justify-center mt-6">
+          <Link href="/create-job" className="text-blue-600 font-medium underline">
+            Create a New Job Posting
+          </Link>
+        </div>
       </div>
     </div>
   );
-}
+};
+
+export default Dashboard;
