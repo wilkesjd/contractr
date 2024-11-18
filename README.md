@@ -1,10 +1,16 @@
 # Contractr
 
-![Contractr Logo](contractr-logo.tsx)
+![Contractr Logo](@components/img/contractr-logo.tsx)
 
 ## Description
 
 A brief description of your project goes here. Explain what your app does, the problem it solves, or any key features that set it apart.
+
+## Creators
+
+Cole Hallberg
+Johnny Wilkes
+Johnathan Neideigh
 
 ## Features
 
