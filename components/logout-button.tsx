@@ -3,11 +3,14 @@ import {MouseEvent} from "react"
 import {Button} from "@nextui-org/react";
 import {signOutAction} from "@/app/actions";
 
-function LogoutButton() {
+interface Props{
+    buttonText: string;
+}
+function LogoutButton(props: Props) {
     return (
         <>
             <Button radius="full" size="lg" color="primary" onClick={(event: MouseEvent) => signOutAction()} className="px-16">
-            Log Out
+            {props.buttonText}
             </Button>
         </>
     );
