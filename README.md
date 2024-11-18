@@ -1,6 +1,6 @@
-# Project Name
+# Contractr
 
-![App Logo](path-to-your-logo.png)
+![Contractr Logo](contractr-logo.tsx)
 
 ## Description
 
