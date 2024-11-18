@@ -29,7 +29,7 @@ export default async function Signup(props: { searchParams: Promise<Message> }) 
         <div className="flex flex-col gap-4 mt-8">
           <div>
             <Label htmlFor="email">Email</Label>
-            <Input name="email" placeholder="you@example.com" required />
+            <Input type= "email" name="email" placeholder="you@example.com" required />
           </div>
           <div>
             <Label htmlFor="password">Password</Label>
