@@ -4,6 +4,7 @@ import { encodedRedirect } from "@/utils/utils";
 import { createClient } from "@/utils/supabase/server";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
+import { lockAccount } from "@/utils/supabase/account"
 
 let numAttempts = 0;
 
@@ -48,11 +49,12 @@ export const signInAction = async (formData: FormData) => {
   });
 
   if(numAttempts === 4) {
+    encodedRedirect('error','/lockout', email);
     numAttempts = 0;
-    return redirect("/")
   }
   if (error) {
-    numAttempts++
+    numAttempts++;
+    console.log(numAttempts);
     return encodedRedirect("error", "/sign-in", error.message);
   }
 
