@@ -1,6 +1,6 @@
 # Contractr
 
-![Contractr Logo](@components/img/contractr-logo.tsx)
+![Contractr Logo](components/img/contractr-logo.tsx)
 
 ## Description
 
