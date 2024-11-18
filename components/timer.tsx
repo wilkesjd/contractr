@@ -2,7 +2,6 @@
 import React from 'react';
 import { signOutAction } from '@/app/actions';
 import { useTimer } from 'react-timer-hook';
-import LogoutButton from './logout-button';
 
 
 
