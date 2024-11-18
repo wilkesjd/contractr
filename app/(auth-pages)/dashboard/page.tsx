@@ -1,8 +1,12 @@
 // app/(auth-pages)/dashboard/page.tsx
 import Link from "next/link"; // Import Link
+import { signOutAction } from "@/app/actions";
+import MyTimer from "@/components/timer";
 
 const Dashboard = () => {
   // Sample job posting data
+  const time = new Date();
+    time.setSeconds(time.getSeconds() + 10); // 10 minutes timer
   const jobPosting = {
     title: "Bathroom Remodel",
     description: "Looking for a contractor to remodel a small bathroom. Includes demo, tiling, plumbing, and painting.",
@@ -13,8 +17,8 @@ const Dashboard = () => {
 
   return (
     <div className="flex items-center justify-center h-screen w-screen max-w-screen bg-gradient-to-br from-black to-purple-600">
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md w-80 space-y-4">
-        <h1 className="text-2xl font-medium text-center mb-6">Welcome to Your Dashboard</h1>
+      <div className="bg-gray-100 p-6 px-16 rounded-lg shadow-md w-500 space-y-4">
+        <h1 className="text-2xl w-80 font-medium text-center mb-6">Welcome to Your Dashboard</h1>
 
         <div className="bg-white p-6 rounded-lg shadow-md space-y-4">
           <h2 className="text-xl font-semibold mb-4">{jobPosting.title}</h2>
@@ -30,6 +34,9 @@ const Dashboard = () => {
             Create a New Job Posting
           </Link>
         </div>
+      </div>
+      <div className="hidden">
+        <MyTimer expiryTimestamp={time}/>
       </div>
     </div>
   );
