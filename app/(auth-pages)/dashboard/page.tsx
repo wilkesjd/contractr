@@ -30,7 +30,7 @@ const Dashboard = () => {
 
         {/* Correctly using Link without the <a> tag */}
         <div className="flex justify-center mt-6">
-          <Link href="/create-job" className="text-blue-600 font-medium underline">
+          <Link href="dashboard/create-job" className="text-blue-600 font-medium underline">
             Create a New Job Posting
           </Link>
         </div>

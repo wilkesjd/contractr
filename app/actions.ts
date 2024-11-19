@@ -137,3 +137,18 @@ export const signOutAction = async () => {
   await supabase.auth.signOut();
   return redirect("/sign-in");
 };
+
+
+//barebones of addJob
+export const addJobAction = async (formData: FormData) => {
+  const title = formData.get("title") as string;
+  const description = formData.get("description") as string;
+  const loaction = formData.get("location") as string;
+
+  //need to change budget type
+  //please
+  const budget = formData.get("budget") as string;
+  const supabase = await createClient();
+
+  return redirect("/dashboard");
+};
