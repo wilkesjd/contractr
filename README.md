@@ -1,5 +1,3 @@
-# Contractr
-
 ![Contractr Logo](components/img/contractr.svg)
 
 ## Objectives
