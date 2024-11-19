@@ -1,63 +1,21 @@
 # Contractr
 
-![Contractr Logo](components/img/contractr-logo.tsx)
+![Contractr Logo](components/img/contractr.svg)
 
-## Description
+## Objectives
 
-A brief description of your project goes here. Explain what your app does, the problem it solves, or any key features that set it apart.
+The primary functionality of Contractr is to provide a platform where freelancers and employers can easily connect, communicate, and finalize job arrangements. The application will utilize location-based services and an intuitive matching algorithm to facilitate job postings and applications. A secure ledger will maintain a comprehensive history of all transactions and interactions between users.
+
+## Business Objectives
+
+The project aims to minimize hiring costs and optimize the job-finding process for both freelancers and employers, offering an effective means for specialists to showcase their skills while providing employers with a diverse talent pool and simplify the research process of finding the highest quality professionals for a job.
+
+## Current Business Process and Rules
+
+Currently, freelancers face challenges in finding suitable job opportunities that match their skills, while employers struggle to locate qualified candidates. Traditional job boards can be cumbersome and inefficient, often leading to mismatched expectations. Contractr aims to bridge this gap by providing a dynamic platform that allows for easy job listings, application reviews, and direct communication between parties.
 
 ## Creators
 
-Cole Hallberg
-Johnny Wilkes
-Johnathan Neideigh
-
-## Features
-
-- Feature 1
-- Feature 2
-- Feature 3
-
-## Installation
-
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-Navigate into the project directory:
-
-bash
-Copy code
-cd your-repo-name
-Install the dependencies:
-
-bash
-Copy code
-npm install
-Start the app:
-
-bash
-Copy code
-npm start
-Usage
-Describe how to use the app, including examples and screenshots if needed. Include any necessary commands or actions.
-
-Contributing
-Fork the repo.
-Create your feature branch (git checkout -b feature-name).
-Commit your changes (git commit -am 'Add new feature').
-Push to the branch (git push origin feature-name).
-Open a pull request.
-License
-Include the license information for your project. For example:
-
-Copy code
-MIT License
-Acknowledgments
-List any resources, tools, or people that you would like to acknowledge.
-vbnet
-Copy code
-
-### Notes:
-- Replace `path-to-your-logo.png` with the relative path to your app logo file.
-- You can adjust the sections as needed, like adding more details on setup or usage based on your project
+- Cole Hallberg
+- Johnny Wilkes
+- Johnathan Neideigh
