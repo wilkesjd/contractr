@@ -1,4 +1,6 @@
-![Contractr Logo](components/img/contractr.svg)
+<p style="text-align: center;">
+  <img src="components/img/contractr.svg" alt="Contractr Logo">
+</p>
 
 ## Objectives
 

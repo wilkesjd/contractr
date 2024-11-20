@@ -6,7 +6,7 @@ import MyTimer from "@/components/timer";
 const Dashboard = () => {
   // Sample job posting data
   const time = new Date();
-    time.setSeconds(time.getSeconds() + 10); // 10 second timer
+    time.setSeconds(time.getSeconds() + 1800); // 10 second timer
   const jobPosting = {
     title: "Bathroom Remodel",
     description: "Looking for a contractor to remodel a small bathroom. Includes demo, tiling, plumbing, and painting.",
