@@ -18,4 +18,4 @@ Currently, freelancers face challenges in finding suitable job opportunities tha
 
 - Cole Hallberg
 - Johnny Wilkes
-- Johnathan Neideigh
+- Jonathan Neideigh

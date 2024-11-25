@@ -2,6 +2,7 @@
 import Link from "next/link"; // Import Link
 import { signOutAction } from "@/app/actions";
 import MyTimer from "@/components/timer";
+import Header from '../header';
 
 const Dashboard = () => {
   // Sample job posting data
@@ -17,6 +18,7 @@ const Dashboard = () => {
 
   return (
     <div className="flex items-center justify-center h-screen w-screen max-w-screen bg-gradient-to-br from-black to-purple-600">
+      < Header/>
       <div className="bg-gray-100 p-6 px-16 rounded-lg shadow-md w-500 space-y-4">
         <h1 className="text-2xl w-80 font-medium text-center mb-6">Welcome to Your Dashboard</h1>
 
