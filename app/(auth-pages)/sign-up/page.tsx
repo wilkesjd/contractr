@@ -20,7 +20,7 @@ export default async function Signup(props: { searchParams: Promise<Message> }) 
     <div className="flex items-center justify-center h-screen w-screen max-w-screen bg-gradient-to-br from-black to-purple-600">
       <form className="bg-gray-100 p-6 rounded-lg shadow-md w-80 space-y-4">
         <h1 className="text-2xl font-medium text-center">Sign Up</h1>
-        <p className="text-sm text-center text-foreground">
+        <p className="text-sm text-center text-gray-600">
           Already have an account?{" "}
           <Link className="text-blue-600 font-medium underline" href="/sign-in">
             Log In
