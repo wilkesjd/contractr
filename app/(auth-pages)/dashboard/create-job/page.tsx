@@ -35,7 +35,7 @@ export default async function AddJob(props: { searchParams: Promise<Message> }) 
             />
           </div>
           <div>
-            <Label htmlFor="float">Budget</Label>
+            <Label htmlFor="number">Budget</Label>
             <Input
               name="budget"
               placeholder="$200"

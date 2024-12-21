@@ -139,16 +139,24 @@ export const signOutAction = async () => {
 };
 
 
-//barebones of addJob
 export const addJobAction = async (formData: FormData) => {
   const title = formData.get("title") as string;
   const description = formData.get("description") as string;
-  const loaction = formData.get("location") as string;
-
-  //need to change budget type
-  //please
-  const budget = formData.get("budget") as string;
+  const location = formData.get("location") as string;
+  const budget = Number(formData.get("budget") as string);
   const supabase = await createClient();
+
+  const { error } = await supabase.from("jobs").insert({
+    title,
+    description,
+    budget,
+    location,
+  });
+
+  if (error) {
+    console.error("Error adding job:", error.message);
+    throw new Error("Failed to add job. Please try again later.");
+  }
 
   return redirect("/dashboard");
 };
